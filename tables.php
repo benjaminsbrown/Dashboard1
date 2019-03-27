@@ -143,7 +143,27 @@
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
+                <iframe width="604" height="695" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item='Input'!A1%3AJ35&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+
+              <div class="card mb-3">
+                  <div class="card-header">
+                    <i class="fas fa-table"></i>
+                    Data Table Example</div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <iframe width="700" height="237" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item='Call%20distribution'!A1%3AS10&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+
+
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-table"></i>
+                  Data Table Example</div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <iframe width="700" height="900" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item='Weekly%20Roster'!A%3AXFD&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+                <!--<thead>
                   <tr>
                     <th>Name</th>
                     <th>Position</th>
@@ -635,15 +655,8 @@
       <!-- /.container-fluid -->
 
       <!-- Sticky Footer -->
-      <footer class="sticky-footer">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
 
-    </div>
+    
     <!-- /.content-wrapper -->
 
   </div>

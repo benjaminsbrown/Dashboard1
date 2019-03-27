@@ -141,7 +141,7 @@
             <i class="fas fa-chart-area"></i>
             Area Chart Example</div>
           <div class="card-body">
-            <canvas id="myAreaChart" width="100%" height="30"></canvas>
+            <iframe width="598" height="381" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item=Chart%202&wdDownloadButton=True&wdInConfigurator=True"></iframe>
           </div>
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
@@ -164,8 +164,7 @@
                 <i class="fas fa-chart-pie"></i>
                 Pie Chart Example</div>
               <div class="card-body">
-                <canvas id="myPieChart" width="100%" height="100"></canvas>
-              </div>
+                <iframe width="485" height="304" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item=Chart%201&wdDownloadButton=True&wdInConfigurator=True"></iframe>              </div>
               <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
             </div>
           </div>
