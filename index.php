@@ -222,7 +222,7 @@
             <i class="fas fa-chart-area"></i>
             Area Chart Example</div>
           <div class="card-body">
-            <canvas id="myAreaChart" width="100%" height="30"></canvas>
+          <iframe width="1000" height="760" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=6CBC82DB865463CF%21110&authkey=%21AGPu6phwPhPohNM&em=2&wdAllowInteractivity=False&Item=Chart%201&wdDownloadButton=True&wdInConfigurator=True"></iframe>
           </div>
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>

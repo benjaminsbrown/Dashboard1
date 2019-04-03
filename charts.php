@@ -141,8 +141,7 @@
             <i class="fas fa-chart-area"></i>
             Staf Hours Graph</div>
           <div class="card-body">
-            <iframe width="598" height="381" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item=Chart%202&wdDownloadButton=True&wdInConfigurator=True"></iframe>
-          </div>
+            <iframe width="598" height="399" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=6CBC82DB865463CF%21117&authkey=%21ABr7kKgA7u0JESk&em=2&wdAllowInteractivity=False&Item=Chart%202&wdDownloadButton=True&wdInConfigurator=True"></iframe>          </div>
           <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
         </div>
 
@@ -153,8 +152,7 @@
                 <i class="fas fa-chart-bar"></i>
                 Staff Hours Pie Chart</div>
               <div class="card-body">
-                <iframe width="485" height="304" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E08C237818558674%2125954&authkey=%21ANBaYvcgAk-_FDg&em=2&Item=Chart%201&wdDownloadButton=True&wdInConfigurator=True"></iframe>              </div>
-              </div>
+                <iframe width="485" height="318" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=6CBC82DB865463CF%21117&authkey=%21ABr7kKgA7u0JESk&em=2&wdAllowInteractivity=False&Item=Chart%201&wdDownloadButton=True&wdInConfigurator=True"></iframe>              </div>
               <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
             </div>
           </div>
