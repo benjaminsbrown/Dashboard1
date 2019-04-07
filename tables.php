@@ -107,7 +107,7 @@
           <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Other Pages:</h6>
-          <a class="dropdown-item" href="404.php">404 Page</a>
+          <a class="dropdown-item" href="Staff.php">Staff Members</a>
           <a class="dropdown-item" href="blank.php">Blank Page</a>
         </div>
       </li>
