@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <?php include('server.php') ?>
 <!DOCTYPE html>
+=======
+<?php include('server2.php') ?>
+<!Doctype html>
+>>>>>>> c33fc76233e8e4349894ffc43ac975b852af8996
 <html>
 <head>
   <title>Add New staff to database</title>
