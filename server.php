@@ -88,7 +88,6 @@ if (isset($_POST['login_user'])) {
   	}
   }
 }
-$db = mysqli_connect('localhost', 'root', '', 'dashboard1');
 //Adding staff members
 if (isset($_POST['reg_staff'])) {
   $staffname = mysqli_real_escape_string($db, $_POST['staffname']);
@@ -105,8 +104,6 @@ if (isset($_POST['reg_staff'])) {
   if (empty($started)) { array_push($errors, "Start date is required"); }
 
   if (count($errors) == 0) {
-
-
   	$query = "INSERT INTO Staff2 (staffname, contract, worked, employment, started, ended)
           VALUES ('$staffname', '$contract', '$worked', '$employment', '$started', '$ended')";
   }
