@@ -13,7 +13,7 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
 
 //Adding staff members
 if (isset($_POST['reg_staff'])) {
-  $Name = $_POST['Name']);
+  $Name = $_POST['Name'];
   $Contract_hours = $_POST['Contract_hours'];
   $Actual_hours = $_POST['Actual_hours'];
   $Employment = $_POST['Employment'];
