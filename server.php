@@ -89,7 +89,7 @@ if (isset($_POST['login_user'])) {
   }
 }
 //Adding staff members
-if (isset($_POST['reg_staff'])){
+if (isset($_POST['reg_staff'])) {
   $Name = mysqli_real_escape_string($db, $_POST['Name']);
   $Contract_hours = mysqli_real_escape_string($db, $_POST['Contract_hours']);
   $Actual_hours = mysqli_real_escape_string($db, $_POST['Actual_hours']);
@@ -106,7 +106,7 @@ if (isset($_POST['reg_staff'])){
   if (count($errors) == 0) {
 
 
-  	$query = "INSERT INTO staff (Name, Contract_hours,, Actual_hours, Employment, Start_date, End_date)
+  	$query = "INSERT INTO staff1 (Name, Contract_hours,, Actual_hours, Employment, Start_date, End_date)
   			  VALUES('$Name', '$Contract_hours','$Actual_hours', '$Employment', '$Start_date', '$End_date')";
   }
 }
