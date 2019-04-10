@@ -92,6 +92,7 @@ if (isset($_POST['login_user'])) {
 if (isset($_POST['reg_staff'])){
   $Name = mysqli_real_escape_string($db, $_POST['Name']);
   $Contract_hours = mysqli_real_escape_string($db, $_POST['Contract_hours']);
+  $Actual_hours = mysqli_real_escape_string($db, $_POST['Actual_hours']);
   $Employment = mysqli_real_escape_string($db, $_POST['Employment']);
   $Start_date = mysqli_real_escape_string($db, $_POST['Start_date']);
   $End_date = mysqli_real_escape_string($db, $_POST['End_date']);
