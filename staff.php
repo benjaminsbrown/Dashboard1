@@ -14,7 +14,7 @@
     <?php include('errors.php'); ?>
     <div class="input-group">
       <label>Name</label>
-      <input type="text" name="name" >
+      <input type="text" name="staffname" >
     </div>
     <div class="input-group">
       <label>Contract hours</label>
