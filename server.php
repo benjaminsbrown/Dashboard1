@@ -4,12 +4,12 @@ session_start();
 // initializing variables
 $username = "";
 $email    = "";
-$Name = "";
-$Contract_hours = "";
-$Actual_hours = "";
-$Employment = "";
-$Start_date = "";
-$End_date = "";
+$name = "";
+$contract = "";
+$worked = "";
+$employment = "";
+$started = "";
+$ended = "";
 $errors = array();
 
 // connect to the database
@@ -88,6 +88,7 @@ if (isset($_POST['login_user'])) {
   	}
   }
 }
+$db = mysqli_connect('localhost', 'root', '', 'dashboard1');
 //Adding staff members
 if (isset($_POST['reg_staff'])) {
   $name = mysqli_real_escape_string($db, $_POST['name']);
@@ -106,7 +107,7 @@ if (isset($_POST['reg_staff'])) {
   if (count($errors) == 0) {
 
 
-  	$query = "INSERT INTO Staff2 (name, contract, worked, employment, started, ended)
+  	$sql = "INSERT INTO Staff2 (name, contract, worked, employment, started, ended)
           VALUES ('$name', '$contract', '$worked', '$employment', '$started', '$ended')";
   }
 }
