@@ -3,13 +3,13 @@ session_start();
 
 // initializing variables
 $username = "";
-$email    = "";
+$email = "";
 $staffname = "";
 $contract = "";
 $worked = "";
 $employment = "";
-$started = "";
-$ended = "";
+$starteddate = "";
+$endeddate = "";
 $errors = array();
 
 // connect to the database
@@ -88,24 +88,33 @@ if (isset($_POST['login_user'])) {
   	}
   }
 }
+
+// ...
+
 //Adding staff members
 if (isset($_POST['reg_staff'])) {
+
   $staffname = mysqli_real_escape_string($db, $_POST['staffname']);
   $contract = mysqli_real_escape_string($db, $_POST['contract']);
   $worked = mysqli_real_escape_string($db, $_POST['worked']);
   $employment = mysqli_real_escape_string($db, $_POST['employment']);
-  $started = mysqli_real_escape_string($db, $_POST['started']);
-  $ended = mysqli_real_escape_string($db, $_POST['ended']);
+  $starteddate = mysqli_real_escape_string($db, $_POST['starteddate']);
+  $endeddate = mysqli_real_escape_string($db, $_POST['endeddate']);
 
 
-  if (empty($staffname)) { array_push($errors, "staffname is required"); }
-  if (empty($contract)) { array_push($errors, "Contract hours is required"); }
-  if (empty($employment)) { array_push($errors, "employment is required"); }
-  if (empty($started)) { array_push($errors, "Start date is required"); }
+  if (empty($staffname)) { array_push($errors, "A name is required"); }
+  if (empty($contract)) { array_push($errors, "Contract hours required"); }
+  if (empty($worked)) { array_push($errors, "Hours worked is required"); }
+  if (empty($employment)) { array_push($errors, "Type of employee required"); }
+  if (empty($starteddate)) { array_push($errors, "Start date required"); }
+  if (empty($endeddate)) { array_push($errors, "End date required"); }
 
   if (count($errors) == 0) {
-  	$query = "INSERT INTO Staff2 (staffname, contract, worked, employment, started, ended)
-          VALUES ('$staffname', '$contract', '$worked', '$employment', '$started', '$ended')";
-  }
+    $query = "INSERT INTO Staff2 (staffname , contract , worked , employment , starteddate , endeddate)
+  			  VALUES('$staffname', '$contract', '$worked', '$employment', '$starteddate', '$endeddate')";
+        echo"it got to the end";
 }
+
+}
+
 ?>
