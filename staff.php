@@ -21,7 +21,7 @@
       <input type="number" name="Contract_hours" >
     </div>
     <label>Actual hours</label>
-    <input type="number" name="$Actual_hours" >
+    <input type="number" name="Actual_hours" >
   </div>
     <div class="input-group">
       <label>Employment</label>
