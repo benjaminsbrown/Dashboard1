@@ -17,8 +17,8 @@ if (isset($_POST['reg_staff'])) {
   $Contract_hours = mysqli_real_escape_string($db, $_POST['Contract_hours']);
   $Actual_hours = mysqli_real_escape_string($db, $_POST['Actual_hours']);
   $Employment = mysqli_real_escape_string($db, $_POST['Employment']);
-  $Start_date = mysqli_real_escape_string($db, $_POST['Start_date']);
-  $End_date = mysqli_real_escape_string($db, $_POST['End_date']);
+  $Start_date = ($db, $_POST['Start_date']);
+  $End_date = ($db, $_POST['End_date']);
 
 
   if (empty($Name)) { array_push($errors, "Name is required"); }
@@ -29,8 +29,7 @@ if (isset($_POST['reg_staff'])) {
   if (count($errors) == 0) {
 
 
-  	$query = "INSERT INTO staff1 (Name, Contract_hours, Actual_hours, Employment, Start_date, End_date)
-  			  VALUES('$Name', '$Contract_hours','$Actual_hours', '$Employment', '$Start_date', '$End_date')";
+  	$query = "INSERT INTO staff1 (Name, Contract_hours, Actual_hours, Employment, Start_date, End_date) VALUES ('$Name', '$Contract_hours','$Actual_hours', '$Employment', '$Start_date', '$End_date')";
   }
 }
 
