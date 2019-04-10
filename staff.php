@@ -36,11 +36,11 @@
     </div>
     <div class="input-group">
       <label>Start Date</label>
-      <input type="text" name="Start_date" >
+      <input type="date" name="Start_date" >
     </div>
     <div class="input-group">
       <label>End Date</label>
-      <input type="text" name="End_date" >
+      <input type="date" name="End_date" >
     </div>
     <div class="input-group">
       <button type="submit" class="btn" name="reg_staff">Add Staff</button>
