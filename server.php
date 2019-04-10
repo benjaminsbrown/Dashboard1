@@ -88,6 +88,7 @@ if (isset($_POST['login_user'])) {
   	}
   }
 }
+//Adding staff members
 if (isset($_POST['reg_staff'])){
   $Name = mysqli_real_escape_string($db, $_POST['Name']);
   $Contract_hours = mysqli_real_escape_string($db, $_POST['Contract_hours']);
