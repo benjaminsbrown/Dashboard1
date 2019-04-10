@@ -36,7 +36,7 @@
     </div>
     <div class="input-group">
       <label>Employment</label>
-      <input type="number" name="Employment" >
+      <input type="text" name="Employment" >
     </div>
     <div class="input-group">
       <label>Start Date</label>
