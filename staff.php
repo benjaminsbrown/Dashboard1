@@ -36,7 +36,7 @@
       <input type="date" name="End_date" >
     </div>
     <div class="input-group">
-      <button type="post" class="btn" name="reg_staff">Add Staff</button>
+      <button type="submit" class="btn" name="reg_staff">Add Staff</button>
     </div>
   </form>
 </body>
