@@ -18,10 +18,10 @@
     </div>
     <div class="input-group">
       <label>Contract hours</label>
-      <input type="number" name="contract" >
+      <input type="text" name="contract" >
     </div>
     <label>Actual hours</label>
-    <input type="number" name="worked" >
+    <input type="text" name="worked" >
   </div>
     <div class="input-group">
       <label>Employment</label>
@@ -29,11 +29,11 @@
     </div>
     <div class="input-group">
       <label>Start Date</label>
-      <input type="date" name="started" >
+      <input type="text" name="started" >
     </div>
     <div class="input-group">
       <label>End Date</label>
-      <input type="date" name="ended" >
+      <input type="text" name="ended" >
     </div>
     <div class="input-group">
       <button type="submit" class="btn" name="reg_staff">Add Staff</button>

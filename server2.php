@@ -1,4 +1,4 @@
-started<?php
+<?php
 session_start();
 
 $name = "";
@@ -29,7 +29,7 @@ if (isset($_POST['reg_staff'])) {
   if (count($errors) == 0) {
 
 
-  	$query = "INSERT INTO staff2 VALUES ('".$name."', '".$contract."','".$worked."', '".$employment."', '".$started."', '".$ended."')";
+  	$query = "INSERT INTO staff2 (name, contract, worked, employment, started, ended) VALUES ('$name', '$contract', '$worked, '$employment', '$started', '$ended')";
   }
 }
 
