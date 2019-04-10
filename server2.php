@@ -29,7 +29,7 @@ if (isset($_POST['reg_staff'])) {
   if (count($errors) == 0) {
 
 
-  	$query = "INSERT INTO staff1 (Name, Contract_hours, Actual_hours, Employment, Start_date, End_date) VALUES ('$Name', '$Contract_hours','$Actual_hours', '$Employment', '$Start_date', '$End_date')";
+  	$query = "INSERT INTO staff2 (name, contract, worked, employment, started, ended) VALUES ('$Name', '$Contract_hours','$Actual_hours', '$Employment', '$Start_date', '$End_date')";
   }
 }
 
