@@ -1,5 +1,4 @@
 <?php include ('server.php')?>
-
 <!Doctype html>
 <html>
 <head>

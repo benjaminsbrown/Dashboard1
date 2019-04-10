@@ -105,7 +105,7 @@ if (isset($_POST['reg_staff'])){
 
 
   	$query = "INSERT INTO staff (Name, Contract_hours, Employment, Start_date, End_date)
-  			  VALUES('$Name', '$Contract_hours', '$Employment', '$Start_date', '$End_date')";
+  			  VALUES('$Name', '$Contract_hours','$Actual_hours', '$Employment', '$Start_date', '$End_date')";
   }
 }
 
