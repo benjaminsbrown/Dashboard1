@@ -4,7 +4,7 @@ session_start();
 // initializing variables
 $username = "";
 $email    = "";
-$name = "";
+$staffname = "";
 $contract = "";
 $worked = "";
 $employment = "";
@@ -91,7 +91,7 @@ if (isset($_POST['login_user'])) {
 $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
 //Adding staff members
 if (isset($_POST['reg_staff'])) {
-  $name = mysqli_real_escape_string($db, $_POST['name']);
+  $staffname = mysqli_real_escape_string($db, $_POST['staffname']);
   $contract = mysqli_real_escape_string($db, $_POST['contract']);
   $worked = mysqli_real_escape_string($db, $_POST['worked']);
   $employment = mysqli_real_escape_string($db, $_POST['employment']);
@@ -99,7 +99,7 @@ if (isset($_POST['reg_staff'])) {
   $ended = mysqli_real_escape_string($db, $_POST['ended']);
 
 
-  if (empty($name)) { array_push($errors, "name is required"); }
+  if (empty($staffname)) { array_push($errors, "staffname is required"); }
   if (empty($contract)) { array_push($errors, "Contract hours is required"); }
   if (empty($employment)) { array_push($errors, "employment is required"); }
   if (empty($started)) { array_push($errors, "Start date is required"); }
@@ -107,8 +107,8 @@ if (isset($_POST['reg_staff'])) {
   if (count($errors) == 0) {
 
 
-  	$sql = "INSERT INTO Staff2 (name, contract, worked, employment, started, ended)
-          VALUES ('$name', '$contract', '$worked', '$employment', '$started', '$ended')";
+  	$sql = "INSERT INTO Staff2 (staffname, contract, worked, employment, started, ended)
+          VALUES ('$staffname', '$contract', '$worked', '$employment', '$started', '$ended')";
   }
 }
 ?>
