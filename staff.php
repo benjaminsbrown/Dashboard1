@@ -1,4 +1,3 @@
-<?php include ('server.php')?>
 <?php
   session_start();
 
@@ -12,6 +11,7 @@
   	header("location: login.php");
   }
 ?>
+<?php include ('server.php')?>
 
 <!Doctype html>
 <html>
