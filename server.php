@@ -90,12 +90,12 @@ if (isset($_POST['login_user'])) {
 }
 //Adding staff members
 if (isset($_POST['reg_staff'])) {
-  $name = $_POST['name'];
-  $contract = $_POST['contract'];
-  $worked = $_POST['worked'];
-  $employment = $_POST['employment'];
-  $started = $_POST['started'];
-  $ended = $_POST['ended'];
+  $name = mysqli_real_escape_string($db, $_POST['name']);
+  $contract = mysqli_real_escape_string($db, $_POST['contract']);
+  $worked = mysqli_real_escape_string($db, $_POST['worked']);
+  $employment = mysqli_real_escape_string($db, $_POST['employment']);
+  $started = mysqli_real_escape_string($db, $_POST['started']);
+  $ended = mysqli_real_escape_string($db, $_POST['ended']);
 
 
   if (empty($name)) { array_push($errors, "name is required"); }
