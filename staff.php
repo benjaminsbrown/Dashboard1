@@ -35,6 +35,10 @@
       <input type="number" name="Contract_hours" >
     </div>
     <div class="input-group">
+      <label>Employment</label>
+      <input type="number" name="Employment" >
+    </div>
+    <div class="input-group">
       <label>Start Date</label>
       <input type="date" name="Start_date" >
     </div>
