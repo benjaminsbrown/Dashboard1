@@ -1,4 +1,4 @@
-<?php include ('server.php')?>
+<?php include('server.php') ?>
 <!Doctype html>
 <html>
 <head>
@@ -14,26 +14,26 @@
     <?php include('errors.php'); ?>
     <div class="input-group">
       <label>Name</label>
-      <input type="text" name="name" value="<?php echo $name; ?>">
+      <input type="text" name="name" >
     </div>
     <div class="input-group">
       <label>Contract hours</label>
-      <input type="text" name="contract" value="<?php echo $contract; ?>">
+      <input type="text" name="contract" >
     </div>
     <label>Actual hours</label>
-    <input type="text" name="worked" value="<?php echo $worked; ?>">
+    <input type="text" name="worked" >
   </div>
     <div class="input-group">
       <label>Employment</label>
-      <input type="text" name="employment" value="<?php echo $employment; ?>">
+      <input type="text" name="employment" >
     </div>
     <div class="input-group">
       <label>Start Date</label>
-      <input type="text" name="started" value="<?php echo $started; ?>">
+      <input type="text" name="started" >
     </div>
     <div class="input-group">
       <label>End Date</label>
-      <input type="text" name="ended" value="<?php echo $ended; ?>">
+      <input type="text" name="ended" >
     </div>
     <div class="input-group">
       <button type="submit" class="btn" name="reg_staff">Add Staff</button>
