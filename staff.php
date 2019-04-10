@@ -14,26 +14,26 @@
     <?php include('errors.php'); ?>
     <div class="input-group">
       <label>Name</label>
-      <input type="text" name="Name" >
+      <input type="text" name="name" >
     </div>
     <div class="input-group">
       <label>Contract hours</label>
-      <input type="number" name="Contract_hours" >
+      <input type="number" name="contract" >
     </div>
     <label>Actual hours</label>
-    <input type="number" name="Actual_hours" >
+    <input type="number" name="worked" >
   </div>
     <div class="input-group">
       <label>Employment</label>
-      <input type="text" name="Employment" >
+      <input type="text" name="employment" >
     </div>
     <div class="input-group">
       <label>Start Date</label>
-      <input type="date" name="Start_date" >
+      <input type="date" name="started" >
     </div>
     <div class="input-group">
       <label>End Date</label>
-      <input type="date" name="End_date" >
+      <input type="date" name="ended" >
     </div>
     <div class="input-group">
       <button type="submit" class="btn" name="reg_staff">Add Staff</button>
