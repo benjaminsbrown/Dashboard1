@@ -1,4 +1,4 @@
-<?php include ('server2.php')?>
+<?php include ('server.php')?>
 <!Doctype html>
 <html>
 <head>
