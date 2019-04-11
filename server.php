@@ -92,29 +92,19 @@ if (isset($_POST['login_user'])) {
 // ...
 
 //Adding staff members
-if (isset($_POST['reg_staff'])) {
+if ((isset($_POST['reg_staff'])) && ! empty( $_POST ) ) {
 
-  $staffname = mysqli_real_escape_string($db, $_POST['staffname']);
-  $contract = mysqli_real_escape_string($db, $_POST['contract']);
-  $worked = mysqli_real_escape_string($db, $_POST['worked']);
-  $employment = mysqli_real_escape_string($db, $_POST['employment']);
-  $starteddate = mysqli_real_escape_string($db, $_POST['starteddate']);
-  $endeddate = mysqli_real_escape_string($db, $_POST['endeddate']);
+  $mysqli = new mysqli( 'localhost', 'root', '', 'dashboard1' );
+
+  if ( $mysqli->connect_error ) {
+    die( 'Connect Error: ' . $mysqli->connect_errno . ': ' . $mysqli->connect_error );
+  }
+
+  $sql = "INSERT INTO Staff2 (staffname, contract, worked, employment, starteddate, endeddate) VALUES( '{$mysqli->real_escape_string($_POST['staffname'])}', '{$mysqli->real_escape_string($_POST['contract'])}', '{$mysqli->real_escape_string($_POST['worked'])}', '{$mysqli->real_escape_string($_POST['employment'])}',
+   '{$mysqli->real_escape_string($_POST['starteddate'])}', '{$mysqli->real_escape_string($_POST['endeddate'])}')";
+  $insert = $mysqli->query($sql);
+  }
 
 
-  if (empty($staffname)) { array_push($errors, "A name is required"); }
-  if (empty($contract)) { array_push($errors, "Contract hours required"); }
-  if (empty($worked)) { array_push($errors, "Hours worked is required"); }
-  if (empty($employment)) { array_push($errors, "Type of employee required"); }
-  if (empty($starteddate)) { array_push($errors, "Start date required"); }
-  if (empty($endeddate)) { array_push($errors, "End date required"); }
-
-  if (count($errors) == 0) {
-    $query = "INSERT INTO Staff2 (staffname , contract , worked , employment , starteddate , endeddate)
-  			  VALUES('$staffname', '$contract', '$worked', '$employment', '$starteddate', '$endeddate')";
-        echo"it got to the end";
-}
-
-}
 
 ?>
