@@ -142,7 +142,7 @@ if (isset($_GET['logout'])) {
       <div class="container-fluid">
 
         <!-- Breadcrumbs-->
-        
+
 
 
 <html>
@@ -152,7 +152,7 @@ if (isset($_GET['logout'])) {
 </head>
 <body>
   <div class="header">
-    <h2>New staff deets</h2>
+    <h2>New Staff Details</h2>
   </div>
 
   <form method="post" action="">
