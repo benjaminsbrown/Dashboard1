@@ -163,11 +163,11 @@ if (isset($_GET['logout'])) {
     </div>
     <div class="input-group">
       <label>Contract hours</label>
-      <input type="text" name="contract" >
+      <input type="int" name="contract" >
     </div>
     <div class="input-group">
     <label>Actual hours</label>
-    <input type="text" name="worked" >
+    <input type="int" name="worked" >
   </div>
     <div class="input-group">
       <label>Employment</label>
@@ -175,11 +175,11 @@ if (isset($_GET['logout'])) {
     </div>
     <div class="input-group">
       <label>Start Date</label>
-      <input type="text" name="starteddate" >
+      <input type="date" name="starteddate" >
     </div>
     <div class="input-group">
       <label>End Date</label>
-      <input type="text" name="endeddate" >
+      <input type="date" name="endeddate" >
     </div>
     <div class="input-group">
       <button type="submit" class="button" name="reg_staff">Add Staff</button>
