@@ -1,6 +1,6 @@
 <?php
-  session_start();
-
+  include('server.php');
+$db = mysqli_connect('localhost', 'root', '', 'dashboard1');
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
   	header('location: login.php');
@@ -10,6 +10,12 @@
   	unset($_SESSION['username']);
   	header("location: login.php");
   }
+   $query_1 = "SELECT MAX(id) FROM Staff2;";
+   $result = mysqli_query($db, $query_1);
+   $staff = mysqli_fetch_assoc($result);
+
+   $query_2 = "SELECT employment FROM Staff2 Count('Part Time')"
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -156,10 +162,10 @@
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-comments"></i>
                 </div>
-                <div class="mr-5">26 New Messages!</div>
+                <div >Total Staff Count <?php print_r($staff)?> </div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left">Total Available hours: </span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -216,11 +222,11 @@
           </div>
         </div>
 
-        <!-- Area Chart Example-->
+        <!-- Headcount Graph-->
         <div class="card mb-3">
           <div class="card-header">
             <i class="fas fa-chart-area"></i>
-            Area Chart Example</div>
+            Headcount Graph</div>
           <div class="card-body">
           <iframe width="1000" height="760" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=6CBC82DB865463CF%21110&authkey=%21AGPu6phwPhPohNM&em=2&wdAllowInteractivity=False&Item=Chart%201&wdDownloadButton=True&wdInConfigurator=True"></iframe>
           </div>
