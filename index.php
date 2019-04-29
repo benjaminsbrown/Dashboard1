@@ -14,7 +14,6 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
    $result = mysqli_query($db, $query_1);
    $staff = mysqli_fetch_assoc($result);
 
-   $query_2 = "SELECT employment FROM Staff2 Count('Part Time')"
 
 ?>
 <!DOCTYPE html>
@@ -165,7 +164,9 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
                 <div >Total Staff Count <?php print_r($staff)?> </div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">Total Available hours: </span>
+                <span class="float-left">Total Available hours: <?php $sql = "SELECT SUM(Contract) FROM Staff2";
+                                                                      $sqldata = mysqli_query($db, $sql);
+                                                                      print_r($sqldata);?> </span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -178,10 +179,10 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-list"></i>
                 </div>
-                <div class="mr-5">11 New Tasks!</div>
+                <div class="mr-5"></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left"></span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -194,10 +195,10 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-shopping-cart"></i>
                 </div>
-                <div class="mr-5">123 New Orders!</div>
+                <div class="mr-5"></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left"></span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -210,10 +211,10 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
                 <div class="card-body-icon">
                   <i class="fas fa-fw fa-life-ring"></i>
                 </div>
-                <div class="mr-5">13 New Tickets!</div>
+                <div class="mr-5"></div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="#">
-                <span class="float-left">View Details</span>
+                <span class="float-left"></span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
                 </span>
@@ -241,12 +242,34 @@ $db = mysqli_connect('localhost', 'root', '', 'dashboard1');
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                </tbody>
-              </table>
+                <?php
+              $sqlget = "SELECT * FROM Staff2";
+              $sqldata = mysqli_query($db, $sqlget);
+
+              echo "<table>";
+              echo "<tr><th>ID</th><th>Staff Name</th><th>Contract Hours</th><th>Worked hours</th><th>Employment type</th><th>Start Date</th><th>End Date</th><th>";
+
+              while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)) {
+                echo "<tr><td>";
+                echo $row['id'];
+                echo "<tr><td>";
+                echo $row['staffname'];
+                echo "<tr><td>";
+                echo $row['contract'];
+                echo "<tr><td>";
+                echo $row['worked'];
+                echo "<tr><td>";
+                echo $row['employment'];
+                echo "<tr><td>";
+                echo $row['starteddate'];
+                echo "<tr><td>";
+                echo $row['endeddate'];
+              }
+              echo "</table>";
+              ?>
             </div>
           </div>
-          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          <div class="card-footer small text-muted">Updated Today 9:30 AM</div>
         </div>
 
       </div>
